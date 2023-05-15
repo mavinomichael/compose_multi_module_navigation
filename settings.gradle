@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Compose Multi-Module Navigation"
+include ':app'
+include ':home'
+include ':home:home-api'
+include ':home:home-impl'
+include ':wallet'
+include ':wallet:wallet-api'
+include ':wallet:wallet-impl'
+include ':profile'
+include ':profile:profile-api'
+include ':profile:profile-impl'
+include ':core'
+include ':core'
+include ':core:dependencyprovider'
+include ':core:feature-api'
